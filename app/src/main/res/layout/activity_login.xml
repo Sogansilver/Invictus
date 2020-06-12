@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="21dp"
+        android:layout_marginTop="14dp"
+        android:text="Invictus" />
+
+    <RelativeLayout
+        android:layout_width="265dp"
+        android:layout_height="414dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white">
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="201dp"
+            android:layout_height="177dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-201dp"
+            android:background="@drawable/corona_laurel" />
+
+
+
+        <EditText
+            android:id="@+id/txtCod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/txtCod"
+            android:layout_marginTop="208dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtPas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCod"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/txtPas"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imageView"
+
+            android:layout_marginStart="-6dp"
+            android:layout_marginTop="332dp"
+            android:text="@string/btnIngresar" />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginStart="106dp"
+            android:layout_marginTop="332dp"
+            android:text="@string/btnLimpiar" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
